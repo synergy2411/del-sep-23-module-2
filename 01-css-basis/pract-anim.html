@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      #car {
+        width: 100px;
+        animation-name: my-animation;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        display: block;
+        animation-timing-function: ease;
+      }
+
+      .container {
+        width: 400px;
+        background-color: #ddd;
+        margin: 50px;
+        height: 50px;
+      }
+
+      @keyframes my-animation {
+        0% {
+          /* margin-left: 10%; */
+          transform: translateX(-100%);
+          /* left: 10%; */
+          /* background-color: #FFF;
+        border-radius: 0px; */
+        }
+        33% {
+          /* margin-left: 33%; */
+          /* left: 33%; */
+          transform: translateX(200%);
+          /* background-color: yellowgreen;
+        border-radius: 20px; */
+        }
+        66% {
+          /* left: 66%; */
+          transform: translateX(300%);
+          /* background-color: rgb(209, 123, 11);
+        border-radius: 50px; */
+        }
+        75% {
+          transform: translate(300%, -400%);
+        }
+        100% {
+          /* left: 100%; */
+          transform: translateX(400%);
+          /* background-color:red; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="car" src="car.jpg" />
+    </div>
+  </body>
+</html>

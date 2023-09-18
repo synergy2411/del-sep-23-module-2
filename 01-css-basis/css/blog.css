@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-container {
+  width: 1200px;
+  border-top: 5px #1098ad solid;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background-color: rgb(228, 226, 226);
+  padding: 20px 0;
+  padding-left: 20px;
+  margin-bottom: 36px;
+}
+header h1 {
+  margin-bottom: 12px;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 8px 0;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+h1 {
+  color: #1098ad;
+}
+
+.author-details {
+  margin-bottom: 24px;
+}
+
+a:link {
+  color: #1098ad;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+a:active {
+  color: orangered;
+  background-color: #444;
+}
+
+.post-heading {
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.post-heading::after {
+  content: "TOP";
+  font-size: 18px;
+  background-color: yellow;
+  padding: 3px 5px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  font-weight: bold;
+  color: #444;
+}
+
+.post-heading::first-letter {
+  /* font-size: 60px; */
+}
+
+.post-image {
+  margin-bottom: 24px;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+.about-html {
+  margin-left: 20px;
+}
+
+ol li:nth-child(odd) {
+  color: red;
+}
+footer {
+  border-bottom: 5px #1098ad solid;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+button {
+  position: absolute;
+  right: 15px;
+  bottom: 50px;
+  /* left: 0;
+  top: 0; */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 12px;
+  display: inline-block;
+}
+
+button::first-letter {
+  color: red;
+  font-size: larger;
+}
+
+.author-img {
+  float: left;
+}
+
+.author-name {
+  float: left;
+  margin-left: 12px;
+  padding: 12px;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
