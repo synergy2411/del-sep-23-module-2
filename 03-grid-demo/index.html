@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Demo</title>
+    <style>
+      .container {
+        margin: 50px;
+        background-color: #ddd;
+        font-size: 32px;
+        display: grid;
+        grid-template-columns: 150px 120px 150px 100px;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 40px;
+        /* align-items: center;
+        justify-items: center;
+        justify-content: center; */
+      }
+
+      .item-1 {
+        background-color: green;
+      }
+      .item-2 {
+        background-color: yellow;
+      }
+      .item-3 {
+        background-color: blue;
+        height: 150px;
+      }
+      .item-4 {
+        background-color: aqua;
+        grid-row: 2 / 3;
+        grid-column: 2 / span 1;
+      }
+      .item-5 {
+        background-color: seagreen;
+      }
+      .item-6 {
+        background-color: red;
+      }
+      .item-7 {
+        background-color: gold;
+        grid-column: 3 / -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">(1) Flexbox</div>
+      <div class="item item-2">(2) and</div>
+      <div class="item item-3">(3) Grid</div>
+      <div class="item item-4">(4) are</div>
+      <div class="item item-5">(5) awesome</div>
+      <div class="item item-6">(6) to</div>
+      <div class="item item-7">(7) learn</div>
+    </div>
+  </body>
+</html>

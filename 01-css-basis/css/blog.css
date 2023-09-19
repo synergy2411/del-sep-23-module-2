@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Lato";
 }
 
 .main-container {
@@ -18,13 +18,9 @@ body {
 }
 
 header {
-  background-color: rgb(228, 226, 226);
-  padding: 20px 0;
-  padding-left: 20px;
+  background-color: #ddd;
+  padding: 20px 12px;
   margin-bottom: 36px;
-}
-header h1 {
-  margin-bottom: 12px;
 }
 header nav ul li {
   display: inline-block;
@@ -145,4 +141,45 @@ header nav {
 
 .clear {
   clear: both;
+}
+
+svg {
+  width: 36px;
+  color: #1098ad;
+  margin-left: 12px;
+}
+
+.related-posts {
+  width: 300px;
+  border-top: 5px solid #1098ad;
+  border-bottom: 2px solid #1098ad;
+  align-self: flex-start;
+  color: #444;
+}
+.related-posts h2 {
+  padding: 20px 10px;
+  background-color: #ddd;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1098ad;
+}
+
+.related-posts article {
+  display: flex;
+  gap: 24px 16px;
+  align-items: center;
+}
+.related-posts article a:link {
+  color: #1098ad;
+  font-weight: bold;
+}
+.related-posts article a:hover {
+  color: #1098ad;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
 }

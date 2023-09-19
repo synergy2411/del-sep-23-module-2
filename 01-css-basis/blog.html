@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/blog.css">
   </head>
   <body>
@@ -12,7 +15,12 @@
     <!-- header -->
 
     <header>
-      <h1>Frontend Technologies</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+      </svg>
+      
+      <h1>
+        Frontend Technologies</h1>
       
       <nav>
         <ul>
@@ -23,26 +31,31 @@
             <a href="#">CSS</a>
           </li>
           <li>
-            <a href="#">JavaScript</a>
+            <a href="#">Flexbox</a>
+          </li>
+          <li>
+            <a href="#">Grid</a>
           </li>
         </ul>
       </nav>
       <div class="clear"></div>
     </header>
 
-    <!-- top blog -->
 
+    <div class="flex-container">
+    <!-- top blog -->
+      <div class="left">
     <h1 class="post-heading">The basic fundamental language for Web : HTML</h1>
 
     <!-- author details -->
 
     <section class="author-details">
-    <img src="./images/author-avatar.avif" width="50px" height="50px" alt="" class="author-img"/>
-    <p class="author-name">
-      Lorem, ipsum dolor sit <strong> amet consectetur </strong>adipisicing
-      elit.
-    </p>
-</section>
+      <img src="./images/author-avatar.avif" width="50px" height="50px" alt="" class="author-img"/>
+      <p class="author-name">
+        Lorem, ipsum dolor sit <strong> amet consectetur </strong>adipisicing
+        elit.
+      </p>
+    </section>
 
     <!-- post image -->
     <img class="post-image" src="./images/post-image.jpg" width="500px" height="300px" alt="" />
@@ -61,12 +74,39 @@
         </ol>
     </p>
 
-
+  </div>
     <!-- sidebar -->
+
+    <aside class="related-posts">
+      <h2>Related Posts</h2>
+      <article>
+        <img src="https://picsum.photos/70" alt="">
+        <div>
+        <a>HTML Cheatsheets</a>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      </article>
+      <article>
+        <img src="https://picsum.photos/70" alt="">
+        <div>
+        <a>CSS Tricks</a>
+        <p>Amet consectetur adipisicing elit.</p>
+      </div>
+      </article>
+      <article>
+        <img src="https://picsum.photos/70" alt="">
+        <div>
+        <a>Web Programming</a>
+        <p>Consectetur adipisicing elit. Atque!</p>
+      </div>
+      </article>
+     
+    </aside>
 
     <!-- Like button -->
     <button>♥ LIKE</button>
 
+  </div>
     <!-- footer -->
     <footer>
         <p>&copy; The Awesome blog 2023 </p>
