@@ -1,0 +1,70 @@
+/* 
+
+PRIMARY COLOR  :#69db7c
+GREY COLOR
+TINTS - f0fbf2
+SHADES - 54af63
+SECONDARY COLOR
+
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+.section-hero {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #f0fbf2;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 0.8;
+  margin-bottom: 3.6rem;
+}
+.hero-slogan {
+  font-size: 3.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  padding: 8px 16px;
+  background-color: #69db7c;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #54af63;
+  cursor: pointer;
+}
+.container {
+  max-width: 100rem;
+  background-color: red;
+  padding: 4rem;
+  font-size: 4.8rem;
+}
