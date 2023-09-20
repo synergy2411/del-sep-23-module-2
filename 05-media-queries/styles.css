@@ -1,0 +1,90 @@
+/* Large Screens */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+img {
+  max-width: 400px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem;
+  margin: 4rem;
+  gap: 2rem;
+}
+
+.container {
+  background-color: orangered;
+  padding: 2rem;
+  margin: 5rem;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Large Desktop */
+@media only screen and (max-width: 1200px) {
+  .container {
+    background-color: rgb(255, 0, 191);
+  }
+}
+
+/* Laptops */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    background-color: greenyellow;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 37.5%;
+  }
+  .container {
+    background-color: blueviolet;
+    flex-direction: column;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobiles */
+@media only screen and (max-width: 650px) {
+  .container {
+    background-color: goldenrod;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-image-container {
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: center;
+  }
+}

@@ -14,19 +14,96 @@
   </head>
   <body>
     <div class="section-hero">
+      <header>
+        <h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          Brand Name
+        </h1>
+        <div class="nav">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">How it works</a>
+              </li>
+              <li>
+                <a href="#">Testimonials</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn--3">Subscribe Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <div class="hero">
         <div class="hero-text">
           <h1 class="heading-primary">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            A healthy meal delivered to your door, every single day
           </h1>
           <p class="hero-slogan">Eat Healthy, Live Healthy</p>
-          <a href="#" class="btn">Start Eating Healthy</a>
+          <a href="#" class="btn btn--1">Start Eating Healthy</a>
+          <a href="#" class="btn btn--2">More &darr;</a>
         </div>
         <div class="hero-image">
           <img src="./image/food.jpg" alt="" class="hero-image" />
         </div>
       </div>
     </div>
-    <div class="container">Lorem ipsum dolor sit amet.</div>
+
+    <!-- Free Meal -->
+    <div class="free-meal-container">
+      <div class="free-meal-text">
+        <h1>Get your first meal for free!</h1>
+        <p>
+          Healthy, tasty and hassle-free meals are waiting for you. Start eating
+          well today. You can cancel or pause anytime. And the first meal is on
+          us
+        </p>
+        <div class="free-meal-form">
+          <div class="sub-name">
+            <label for="">Full Name:</label> <br />
+            <input
+              type="text"
+              name="sub-name"
+              placeholder="John Doe"
+              class="form-input"
+            />
+          </div>
+          <div class="sub-email">
+            <label for="">Email Address:</label> <br />
+            <input
+              type="email"
+              name="sub-email"
+              placeholder="john@example.com"
+              class="form-input"
+            />
+          </div>
+          <div class="sub-from">
+            <label for="">Where did you here about us?</label> <br />
+            <select class="form-input">
+              <option value="">Please choose one option:</option>
+            </select>
+          </div>
+          <div class="sub-button">
+            <button class="btn btn-sign-up">Sign up now</button>
+          </div>
+        </div>
+      </div>
+      <img src="./image/eating.jpg" alt="" class="free-meal-image" />
+    </div>
   </body>
 </html>
