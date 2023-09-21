@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Person -->
+    <div itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">S. S. Rajamouli</h1>
+      <p itemprop="dateofbirth">Date of Birth : 10 October 1973</p>
+      <p itemprop="role">Role : Director</p>
+      <div itemscope itemtype="https://schema.org/Movie">
+        <ul>
+          <li itemprop="name">RRR</li>
+          <li itemprop="name">Bahubali- The Beginning</li>
+          <li itemprop="name">Bahubali- The Conclusion</li>
+        </ul>
+      </div>
+    </div>
+
+    <button aria-label="This button is used to display the menu">Menu</button>
+  </body>
+</html>
