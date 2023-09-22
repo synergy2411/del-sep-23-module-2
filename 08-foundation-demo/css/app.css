@@ -1,0 +1,16 @@
+.small-text {
+  font-size: 0.8rem;
+}
+
+#star::after {
+  content: "*";
+  color: red;
+}
+
+.cell {
+  /* border: 1px red solid; */
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}

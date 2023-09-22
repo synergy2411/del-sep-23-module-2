@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Opening Form</title>
+
+    <link rel="icon" href="./images/favicon.jpg" />
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="card" style="margin: 20px auto; background-color: #f6f5f5">
+      <div class="card-section">
+        <header>
+          <div class="top grid-x">
+            <div class="cell small-4">
+              <nav class="text-center">
+                <h5>Brand Name</h5>
+                <h6 class="subheader">(Slogan of the bank)</h6>
+              </nav>
+            </div>
+            <div class="cell auto">
+              <div class="card">
+                <div class="card-section">
+                  <div class="grid-x grid-padding-x">
+                    <div class="cell small-5 text-right">
+                      <span class="small-text">Customer ID:</span>
+                    </div>
+                    <div class="cell small-7">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Please enter your 10 digit customer Id"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid-x grid-padding-x">
+                    <div class="cell small-4 text-right">
+                      <span class="small-text">Account Number:</span>
+                    </div>
+                    <div class="cell small-8">
+                      <input
+                        type="text"
+                        placeholder="Please enter your 12 digit Account Number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-y">
+            <div class="cell">
+              <p>FIELDS WITH <span id="star"></span> (STAR) ARE MANDATORY</p>
+            </div>
+            <div class="cell">
+              <p class="small-text">
+                Please fill in all the details in
+                <strong>CAPITAL LETTER</strong> only
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Tab bar -->
+        <ul class="tabs" data-tabs id="my-tabs">
+          <li class="tabs-title is-active">
+            <a href="#type-of-account" aria-selected="true">Type of Account</a>
+          </li>
+          <li class="tabs-title">
+            <a href="#applicant-details">Applicant Details</a>
+          </li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="my-tabs">
+          <div class="tabs-panel is-active" id="type-of-account">
+            <!-- TYPE OF ACCOUNT -->
+            <div id="type-of-account">
+              <form action="#">
+                <fieldset>
+                  <!-- Account Type Drop Down -->
+                  <div class="grid-x grid-margin-y grid-padding-x">
+                    <div class="cell small-2">
+                      <label for="">Account Type : </label>
+                    </div>
+                    <div class="cell small-6">
+                      <select name="" id="">
+                        <option value="">Current Account</option>
+                        <option value="">
+                          Exchange Earners Foreign Currency Account
+                        </option>
+                        <option value="">Special Saving Account</option>
+                      </select>
+                    </div>
+                    <div class="cell small-4"></div>
+                  </div>
+
+                  <!-- IKIT / NON-IKIT -->
+                  <div class="grid-x grid-margin-y grid-padding-x">
+                    <div class="cell small-3">
+                      <strong
+                        ><span id="star"></span
+                        ><mark> IKIT / NON-IKIT</mark></strong
+                      >
+                    </div>
+                    <div class="cell small-2">
+                      <input type="radio" name="ikit" id="" /> IKIT
+                    </div>
+                    <div class="cell small-2">
+                      <input type="radio" name="ikit" id="" /> NON-IKIT
+                    </div>
+                  </div>
+
+                  <div class="grid-x grid-margin-y grid-padding-x">
+                    <div class="cell small-6">
+                      <label for="">
+                        <span id="star"></span>
+                        <strong style="display: inline-block"
+                          ><mark>PRODUCT DETAILS@:</mark></strong
+                        >
+                        Product Name :
+                      </label>
+                    </div>
+                    <div class="cell small-4">
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div class="cell small-2">
+                      <!-- EMPTY CELL ON RIGHT -->
+                    </div>
+                    <div class="cell small-2">
+                      <label for="">
+                        MAB
+                        <input type="radio" name="product-type" id="" />
+                      </label>
+                    </div>
+                    <div class="cell small-2">
+                      <label for="">
+                        QTP
+                        <input type="radio" name="product-type" id="" />
+                      </label>
+                    </div>
+                    <div class="cell small-2">
+                      <label for=""
+                        >Others
+                        <input type="radio" name="product-type" id="" />
+                      </label>
+                    </div>
+                    <div class="cell auto">
+                      <input
+                        type="text"
+                        name="product-type"
+                        id=""
+                        placeholder="please mention other product name here"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="grid-x grid-margin-y grid-padding-x">
+                    <div class="cell small-2">
+                      <label for="">Branch:</label>
+                    </div>
+                    <div class="cell small-3">
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div class="cell small-2"></div>
+                    <div class="cell small-2">
+                      <label for=""> Branch Code </label>
+                    </div>
+                    <div class="cell small-3">
+                      <input type="text" name="" id="" />
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="tabs-panel" id="applicant-details">
+            <div id="applicant-details">
+              <div class="card">
+                <div class="card-divider"><h5>Applicant Details</h5></div>
+                <div class="card-section"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APPLICANT DETAILS -->
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

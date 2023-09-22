@@ -1,0 +1,26 @@
+[
+  {
+    "productName": "iPhone 15",
+    "productQty": 100,
+    "productPrice": 199,
+    "productDesc": "Awesome Product",
+    "isAvailable": true,
+    "launchDate": "2023-09-22"
+  },
+  {
+    "productName": "iPhone 15",
+    "productQty": 100,
+    "productPrice": 199,
+    "productDesc": "Awesome Product",
+    "isAvailable": true,
+    "launchDate": "2023-09-22"
+  },
+  {
+    "productName": "iPhone 15",
+    "productQty": 100,
+    "productPrice": 199,
+    "productDesc": "Awesome Product",
+    "isAvailable": true,
+    "launchDate": "2023-09-22"
+  }
+]
